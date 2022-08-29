@@ -1,1 +1,1 @@
-# yii2-apcu
+# yii2-apcu-dashboard
