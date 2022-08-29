@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class ApcuDashboardAssets extends AssetBundle
 {
-    public $sourcePath = __DIR__ . '/Assets/css/';
+    public $sourcePath = __DIR__;
     public $css = [
         'css/apcu_dashboard.css'
     ];
