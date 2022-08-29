@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  php80:
+    container_name: yii2-apcu-dashboard-php80
+    hostname: yii2-apcu-dashboard-php80
+    build: ./php/80
+    volumes:
+      - ../runtime/.composer80:/root/.composer
+      - ../..:/var/www
+    networks:
+      - yii2-apcu-dashboard-network
+
+networks:
+  yii2-apcu-dashboard-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16

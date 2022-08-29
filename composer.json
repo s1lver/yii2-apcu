@@ -1,0 +1,32 @@
+{
+  "name": "s1lver/yii2-apcu-dashboard",
+  "type": "yii2-extension",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.0|^8.1",
+    "yiisoft/yii2": "^2.0.45"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "S1lver\\ApcuDashboard\\": "src"
+    }
+  },
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
